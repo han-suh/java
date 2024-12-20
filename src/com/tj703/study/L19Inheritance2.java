@@ -1,6 +1,6 @@
 package com.tj703.study;
 
-public class L19Ingeritance2 {
+public class L19Inheritance2 {
     // 객체 지향 언어의 상속
     class A{
         int a=10;
@@ -44,7 +44,7 @@ public class L19Ingeritance2 {
     }
 
     public static void main(String[] args) {
-        L19Ingeritance2 o=new L19Ingeritance2();
+        L19Inheritance2 o=new L19Inheritance2();
         B b=o.new B(1);
         System.out.println(b.a);
         System.out.println(b.b);
