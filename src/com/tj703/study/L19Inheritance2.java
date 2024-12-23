@@ -17,7 +17,7 @@ public class L19Inheritance2 {
         // B 의 생성자 규칙이 바뀌면 default 생성자가 부모 객체를 만들 수 없기 때문에 생성자를 재정의 해야한다.(강제)
         public C(){
             // super(); 자동으로 작성된다. (매개변수가 없는 생성자가 있을 때)
-            super(100);
+            super(); // super(100);
         }
     }
 
@@ -45,7 +45,7 @@ public class L19Inheritance2 {
 
     public static void main(String[] args) {
         L19Inheritance2 o=new L19Inheritance2();
-        B b=o.new B(1);
+        B b=o.new B(); // B b=o.new B(1);
         System.out.println(b.a);
         System.out.println(b.b);
         System.out.println(b.add(13,14));
